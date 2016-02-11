@@ -4,5 +4,6 @@
 # See the accompanying LICENSE file for terms.
 #
 
+mkdir -p classes
 javac -d classes -cp jars/jetty-all-uber.jar HttpServer.java
 java -cp classes:jars/jetty-all-uber.jar org.eclipse.jetty.embedded.HttpServer
