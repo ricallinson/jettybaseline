@@ -1,0 +1,8 @@
+#
+# Copyright 2016) Yahoo Inc.
+# Copyrights licensed under the New BSD License.
+# See the accompanying LICENSE file for terms.
+#
+
+javac -d classes -cp jars/jetty-all-uber.jar HttpServer.java
+java -cp classes:jars/jetty-all-uber.jar org.eclipse.jetty.embedded.HttpServer
