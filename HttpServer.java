@@ -36,7 +36,6 @@ public class HttpServer extends AbstractHandler {
 
         HttpConfiguration httpConfig = new HttpConfiguration();
         httpConfig.setSendServerVersion(false);
-        httpConfig.setSendDateHeader(false);
 
         ServerConnector http = new ServerConnector(server, new HttpConnectionFactory(httpConfig));
         http.setPort(8080);
